@@ -1,0 +1,45 @@
+{
+  "api": {
+    "url": "https://mxm.ltct.ro/api"
+  },
+  "auth": {
+    "endpoint": "users",
+    "signup_endpoint": "/users/signup",
+    "login_endpoint": "/users/login",
+    "forgotPassword_endpoint": "/users/forgotPassword",
+    "resetPassword_endpoint": "/users/resetPassword",
+    "resendActivationUrl": "/users/resendActivationUrl",
+    "refreshToken_endpoint": "/users/refreshToken",
+    "updatePassword_endpoint": "/users/updateMyPassword"
+  },
+  "users": {
+    "all_endpoint": "/users/front/all",
+    "slug_endpoint": "/users/front/slug/{{slug}}",
+    "me_endpoint": "/users/me",
+    "profilePicture_endpoint": "/users/me/profilePicture",
+    "all_admin_endpoint": "/users",
+    "id_admin_endpoint": "/users/{{id}}"
+  },
+  "services": {
+    "all_endpoint": "/services",
+    "id_admin_endpoint": "/services/{{id}}",
+    "cover_admin_endpoint": "/services/{{id}}/cover"
+  },
+  "locations": {
+    "all_endpoint": "/locations?page={{page}}&limit={{limit}}",
+    "new_endpoint": "/locations",
+    "slug_endpoint": "/locations/{{slug}}",
+    "id_admin_endpoint": "/locations/{{id}}/admin",
+    "id_admin_update_endpoint": "/locations/{{id}}",
+    "add_picture_endpoint": "/locations/{{id}}/pictures",
+    "pictures_admin_endpoint": "/locations/{{id}}/pictures/{{pictureId}}",
+    "employee_endpoint": "/locations/{{id}}/employees/{{employee}}"
+  },
+  "bookings": {
+    "endpoint": "/bookings",
+    "available_endpoint": "/bookings/available",
+    "checkout_endpoint": "/bookings/{{id}}/checkout",
+    "admin_endpoint": "/bookings/admin",
+    "update_endpoint": "/bookings/{{id}}"
+  }
+}
